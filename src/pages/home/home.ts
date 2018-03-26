@@ -6,9 +6,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  root = "InformationPage";
   constructor(public navCtrl: NavController) {
 
+  }
+
+  open(pageName){
+    this.root = pageName;
   }
 
 }
